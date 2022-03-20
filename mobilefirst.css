@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 , h3, h4 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+
+
+img {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    padding: 0.6rem;
+    background-color: cadetblue;
+}
+
+.first_image {
+    padding: 0;
+}
+
+.back_img {
+    padding: 0.5rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)) , url("/dublin-gbc85c00ec_1920.jpg");
+}
+
+.info {
+    background-color: royalblue;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.cards {
+    /* display: block; default */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: antiquewhite;
+}
+
+.card_img {
+    width: 100%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.5rem;
+}
+
+.car1 {
+    background-image: url("/mercedes-amg-sl-63-2021-01.jpg");
+}
+
+.car2 {
+    background-image: url("/bmw-m4-cs-2017-1.jpg");
+}
+.car3 {
+    background-image: url(/bmwm4.jpg);
+}
+
+.car4 {
+    background-image: url("/Audi_TT_TTS.jpg");
+}
+
+.tipps {
+    padding: 0.5rem;
+    background-color: aquamarine;
+}
+
+.tipps .liste ul {
+    line-height: 1.6rem;
+    
+}
+
+@media all and (min-width: 706px ) {
+    
+    .card_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card_wrapper >* {
+        flex: 1 1 300px;
+        margin-bottom: 0;
+    }
+}
